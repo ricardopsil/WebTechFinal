@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerenciamento de Produtos</title>
+</head>
+<body>
+    <h1>Adicionar Novo Produto</h1>
+    <form id="productForm">
+        <input type="hidden" id="userIdField" name="userIdField">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="category">Categoria:</label>
+        <select name="dropdownCategory" id="category">
+            <option value="" disabled selected>Select an option...</option>
+            <option value="value1">Option 1</option>
+            <option value="value2">Option 2</option>
+            <option value="value3">Option 3</option>
+        </select>
+        <br>
+
+        <button type="submit" id="saveBtn">Adicionar Produto</button>
+    </form>
+
+    <h1>Lista de Produtos</h1>
+    <button id="getAllProductsBtn">Obter Todos Produtos</button>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Supplier</th>
+                <th>Barcode</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Products go here -->
+        </tbody>
+    </table>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
+<!--private Integer id;-->
+<!--private String name;-->
+<!--private String category;-->
+<!--private float price;-->
+<!--private Integer quantity;-->
+<!--private String supplier;-->
+<!--private String barcode;-->

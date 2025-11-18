@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // const vars
     const backendUrl = 'http://localhost:8080';
-    const productForm = document.getElementById('ProductForm');
+    const productForm = document.getElementById('productForm');
     const getAllProductsBtn = document.getElementById('getAllProductsBtn');
     const productTableBody = document.querySelector('#productTableBody tbody');
     const productIdField = document.getElementById('productIdField');
