@@ -1,0 +1,102 @@
+/* Reset/Tipografia */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+    font-size: 0.9rem;
+}
+
+/* Logo */
+.logo-square {
+    width: 44px;
+    height: 44px;
+    background: #ffbf00;
+    color: #111;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* Hero card */
+.hero-card {
+    background: linear-gradient(90deg, #111 0%, #222 100%);
+    color: #fff;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+}
+
+    .hero-card .card-body, .hero-card p {
+        color: rgba(255,255,255,0.9);
+    }
+
+.hero-watch {
+    max-width: 260px;
+    transform: rotate(-6deg);
+    margin: 1.5rem auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
+}
+
+/* Sticky sidebar card*/
+.sticky-card {
+    position: sticky;
+    top: 80px;
+}
+
+/* Product card */
+.product-card .card-img-top {
+    height: 170px;
+    object-fit: cover;
+}
+
+/* Left categories */
+.list-group-item.active {
+    background: linear-gradient(90deg,#ffbf00,#f2a800);
+    color: #111;
+    border-color: transparent;
+    font-weight: 600;
+}
+
+/* Cards (serviços) estilo */
+.card.h-100 {
+    border: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    border-radius: 12px;
+}
+
+/* Botões e badges */
+.btn-warning {
+    background-color: #ffbf00;
+    border-color: #ffbf00;
+    color: #111;
+}
+
+.btn-outline-primary {
+    border-radius: 8px;
+}
+
+/* Pequenas customizações */
+.small {
+    font-size: .85rem;
+}
+
+.hero-card .display-6 {
+    font-size: 2.0rem;
+    line-height: 1.05;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .sticky-card {
+        position: static;
+    }
+
+    .hero-watch {
+        max-width: 220px;
+    }
+}
+
+/* Ajustes estéticos gerais */
+body.bg-light {
+    background: #f6f7fb;
+}
